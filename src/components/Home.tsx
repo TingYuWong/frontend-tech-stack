@@ -11,6 +11,9 @@ const Home = () => {
     <div>
       <div>Home</div>
       <button onClick={toAboutPage}>Click</button>
+      {/* Best Practice: Use data-* attributes to provide context to your selectors 
+      and isolate them from CSS or JS changes. */}
+      <input data-testId="test-input" />
     </div>
   );
 };
